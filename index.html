@@ -1,0 +1,89 @@
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>SDA</title>
+
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif"}
+table.TableGrid
+	{border:1.0pt solid black;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+-->
+</style>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>SDA</title>
+
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif"}
+table.TableGrid
+	{border:1.0pt solid black;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+-->
+</style>
+</head>
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<body>
+
+<table class="MsoNormalTable" border="0" cellpadding="0" width="1217" id="table3" height="35">
+	<tr>
+	<td valign="top" style="width: 1211px; height: 31px; padding: .75pt" align="left">
+		
+		<p class="text"><span lang="en-us"><font face="Calibri" size="5" color="#0000FF">
+		<b>Robust Surround-view Data Association in SLAM Systems for Indoor Parking</b></font></span>
+		
+		<p class="text"><span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		Xuan Shao<sup>1</sup>,  Lin Zhang<sup>1</sup>,Tianjun Zhang<sup>1</sup>, Shengjie Zhao<sup>1</sup> and Yicong Zhou<sup>2</sup></font></span>
+
+		<p class="text"><span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		<sup>1</sup>School of Software Engineering, Tongji University, Shanghai, China</font></span>
+		<p class="text"><font face="Calibri" size="4" color="#0000FF"><sup>2</sup><span lang="en-us">
+		Department of Computer and Information Science, University of Macau, Macau, China</span></font>
+	</td>
+	</tr>
+</table>
+
+<hr>
+<p><span lang="en-us"><b><font face="Calibri" size="5">Abstract</font></b></span></p>
+
+Semantic VI-SLAM (Visual-Inertial Simultaneous Localization And Mapping) systems  for  autonomous  indoor  parking  perceive  the  parking  environment  by constructing a map with various semantic objects.  When building such a semantic  map,  a  crucial  data  association  problem  exists.  It  refers  to  relating each semantic object currently observed with an existing landmark in the map.However, data association remains unresolved due to the fact that the change in the appearance of each semantic object when the vehicle moves may lead to incorrect observation-landmark matchings.  By contrast, surround-view imagescaptured from a top-down viewpoint can encode both easily recognizable and appearance-consistent semantic objects on the ground.  Thus, in this paper, we aim to develop a robust data association approach integrating both geometricand semantic measurements of surround-view objects.  Specifically, to ensure geometric accuracy, the metric information provided by surround-view images is utilized to refine the scale of the SLAM system, whose initial value is imprecise because of the low accuracy of the IMU (Inertial Measurement Unit) measurement.  Additionally, we propose a novel semantic feature learning model with a  triplet  loss  to  effectively  extract  the  unique  feature  of  each  surround-view object.  It encourages all representations of one surround-view semantic objectwhen viewed from different perspectives to be projected onto a single point in the embedding space.  By integrating both geometric and semantic measurements, our  proposed  data  association  approach  significantly  outperforms  traditional ones in accuracy and robustness.  Extensive experiments in typical indoor parking environments validate the effectiveness and efficiency of the proposed data association approach.  The relevant code has been made publicly available at https://shaoxuan92.github.io/SDA.
+
+<p align="left"><img border="0" src="overview.png" height="458"></p>
+
+<hr>
+<p><span lang="en-us"><b><font face="Calibri" size="5">Overall Framwork</font></b></span></p>
+<p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt">The data association is conducted based on three categories of semantic objects in surround-view images including parking-slots, speed bumps and  parking-slot  IDs.   Both  geometric  and  semantic  measurements  of  these  surround-view semantic objects are exploited in pursuing the optimal data association results..</font></span></p>
+<p align="left"><img border="0" src="Framework.png" height="458"></p>
+
+<hr>
+<p><span lang="en-us"><b><font face="Calibri" size="5">Relevant Dataset and Code</font></b></span></p>
+<p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt">2. 
+<a href=https://pan.baidu.com/s/1MfGpZ532TWeKwR_DeztsSQ>Data&Code</a></font></span></p>
+<p>
+2drb</p>
+
+<hr>
+<p align="justify"><font face="Calibri">Last update: <span lang="en-us">November. 8,</span>2021</span></font></p>
+</body>
+</html>
